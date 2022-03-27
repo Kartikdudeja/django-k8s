@@ -3,6 +3,7 @@
 import os
 import sys
 
+import dotenv
 
 def main():
     """Run administrative tasks."""
@@ -19,4 +20,6 @@ def main():
 
 
 if __name__ == '__main__':
+    # read .env file before starting the application
+    dotenv.read_dotenv()
     main()
